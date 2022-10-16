@@ -1,9 +1,7 @@
 from django.urls import path, include
 from rest_framework import routers
-from .views import FileUploadAPIView, Top5CustomersAPIView
+from .views import FileUploadAPIView
 
 router = routers.DefaultRouter()
-router.register(r'upload', FileUploadAPIView, basename="upload"),
-router.register(r'top5', Top5CustomersAPIView, basename="top5"),
-
+router.register(r'deals', FileUploadAPIView, basename="deals")
 urlpatterns = router.urls

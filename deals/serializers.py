@@ -6,12 +6,3 @@ class UploadedDataSerializer(Serializer):
 
     class Meta:
         fields = ['file_uploaded']
-
-
-class TopCustomerSerializer(Serializer):
-    username = CharField()
-    spent_money = IntegerField()
-    #gems = ListField()
-
-    class Meta:
-        fields = ['username', 'spent_money']
